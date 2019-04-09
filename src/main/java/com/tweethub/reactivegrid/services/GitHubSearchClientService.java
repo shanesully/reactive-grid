@@ -1,5 +1,5 @@
 package com.tweethub.reactivegrid.services;
 
-public interface TwitterSearchService {
+public interface GitHubSearchClientService {
 
 }
