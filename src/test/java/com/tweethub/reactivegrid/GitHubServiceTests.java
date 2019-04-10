@@ -1,6 +1,6 @@
 package com.tweethub.reactivegrid;
 
-import com.tweethub.reactivegrid.services.impl.GitHubSearchServiceImpl;
+import com.tweethub.reactivegrid.services.impl.GithubSearchServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,7 +27,7 @@ public class GitHubServiceTests {
   private int port;
 
   @Autowired
-  GitHubSearchServiceImpl gitHubSearchService;
+  GithubSearchServiceImpl gitHubSearchService;
 
   @Test
   public void contextLoads() {
@@ -40,6 +40,6 @@ public class GitHubServiceTests {
 
   @Test
   public void testGitHubServiceWorking() throws Exception {
-    gitHubSearchService.searchReactiveProjects();
+    gitHubSearchService.getProjects();
   }
 }
