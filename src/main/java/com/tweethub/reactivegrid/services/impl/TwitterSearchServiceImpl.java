@@ -16,6 +16,7 @@ public class TwitterSearchServiceImpl extends AbstractRestClient
   private static final String ENGLISH_ONLY = "lang:en";
   private static final String EXCLUDE_RETWEETS = "exclude:retweets";
   private static final String EXCLUDE_REPLIES = "exclude:replies";
+  private static final int COUNT = 10;
   private static final String SEPARATOR = " ";
   private static final String ENCODED_HASHTAG = "%23";
 
@@ -36,7 +37,7 @@ public class TwitterSearchServiceImpl extends AbstractRestClient
   }
 
   private Query buildTwitterQuery(String query) {
-    return new Query(query);
+    return new Query(query).count(COUNT);
   }
 
   private QueryResult getTwitterSearchResultForQuery(String query) throws Exception {
