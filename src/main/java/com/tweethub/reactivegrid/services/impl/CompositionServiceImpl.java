@@ -23,6 +23,8 @@ public class CompositionServiceImpl implements CompositionService {
   @Autowired
   JsonMarshallingServiceImpl jsonMarshallingService;
 
+  private static final String DEFAULT_PAGE = "1";
+
   private Map<String, TweetEntity> tweetMap;
   private List<TweetEntity> tweetsForProject;
   private List<CompositeProjectEntity> finalProjectList;
@@ -39,8 +41,13 @@ public class CompositionServiceImpl implements CompositionService {
   }
 
   public Map<String, Map<String, CompositeProjectEntity>> getProjectsWithTweets() throws Exception {
+    return getProjectsWithTweets(DEFAULT_PAGE);
+  }
 
-    githubProjects = githubSearchService.getProjects();
+  public Map<String, Map<String, CompositeProjectEntity>> getProjectsWithTweets(String page) throws Exception {
+    flushValues();
+
+    githubProjects = githubSearchService.getProjects(page);
 
     for(GithubProjectEntity project: githubProjects) {
         tweetsForProject = twitterSearchService.getTweetsByHashtag(project.getName());
@@ -70,5 +77,11 @@ public class CompositionServiceImpl implements CompositionService {
     finalMapNoReally.put(keyName, finalProjectsMap);
 
     return finalMapNoReally;
+  }
+
+  private void flushValues() {
+    finalProjectList = new ArrayList<>();
+    githubProjects = new ArrayList<>();
+    finalProjectsMap = new LinkedHashMap<>();
   }
 }

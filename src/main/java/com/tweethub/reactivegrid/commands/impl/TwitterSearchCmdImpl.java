@@ -13,7 +13,7 @@ public class TwitterSearchCmdImpl extends AbstractShellCmd implements TwitterSea
   @Autowired
   TwitterSearchServiceImpl twitterSearchService;
 
-  @ShellMethod(value="Search TweetEntity by Hashtag", key="get_tweets_for_project")
+  @ShellMethod(value="Search TweetEntity by Project Name", key="search_tweets_by_project")
   public String searchTweetsForProject(String projectName) throws Exception {
     return objectMapper.writeValueAsString(
         jsonMarshallingService.convertListToSequencedMap(
