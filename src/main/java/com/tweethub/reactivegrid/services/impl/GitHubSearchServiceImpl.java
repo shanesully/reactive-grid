@@ -1,45 +1,34 @@
 package com.tweethub.reactivegrid.services.impl;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.tweethub.reactivegrid.domain.GitHubSearchResponse;
+import com.tweethub.reactivegrid.domain.GithubProjectEntity;
 import com.tweethub.reactivegrid.services.AbstractRestClient;
-import com.tweethub.reactivegrid.services.GitHubSearchClientService;
-import com.tweethub.reactivegrid.services.ReactiveGridService;
-import java.util.ArrayList;
+import com.tweethub.reactivegrid.services.GithubSearchService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-@Service("GitHubSearchClientService")
-public class GitHubSearchServiceImpl extends AbstractRestClient implements
-    GitHubSearchClientService {
+@Service("GithubSearchService")
+public class GithubSearchServiceImpl extends AbstractRestClient implements
+    GithubSearchService {
 
   @Autowired
   JsonMarshallingServiceImpl jsonMarshallingService;
 
-  @Autowired
-  ReactiveGridService reactiveGridService;
+  private static final String GITHUB_API = "https://api.github.com/search/repositories";
+  private static final String SEARCH_QUERY = "?q=reactive";
 
-  private static String uri = "https://api.github.com/search/repositories";
-  private static String searchQuery = "?q=reactive";
+  private ResponseEntity<String> rawResponse;
+  private JsonNode jsonResponse;
+  private JsonNode jsonGithubProjects;
 
-  private static List<GitHubSearchResponse> gitHubResponses = new ArrayList<>();
+  public List<GithubProjectEntity> getProjects() throws Exception {
+    rawResponse = getResults(GITHUB_API + SEARCH_QUERY);
 
-  @RequestMapping("/repos")
-  public ResponseEntity<String> searchReactiveProjects() throws Exception {
+    jsonResponse = jsonMarshallingService.parseHttpResponseToJson(rawResponse);
+    jsonGithubProjects = jsonMarshallingService.parseGitHubProjectsFromJson(jsonResponse);
 
-    ResponseEntity<String> rawSearchResults = getResults(uri + searchQuery);
-
-    ObjectMapper mapper = new ObjectMapper();
-    ObjectNode node = jsonMarshallingService.parseGitHubResponseToJson(rawSearchResults);
-    JsonNode parsedGithubProjects = jsonMarshallingService.parseGithubProjects(node);
-    ArrayList<GitHubSearchResponse> formattedGithubProjects = jsonMarshallingService.marshallFormattedGithubJson(parsedGithubProjects);
-
-    return new ResponseEntity<>(mapper.writeValueAsString(formattedGithubProjects), HttpStatus.OK);
+    return jsonMarshallingService.returnGitHubProjectsList(jsonGithubProjects);
   }
 }
