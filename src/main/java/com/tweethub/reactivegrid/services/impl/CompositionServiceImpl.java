@@ -23,7 +23,7 @@ public class CompositionServiceImpl implements CompositionService {
   @Autowired
   private JsonMarshallingServiceImpl jsonMarshallingService;
 
-  private static final String DEFAULT_PAGE = "1";
+  private final String DEFAULT_PAGE = "1";
 
   private Map<String, TweetEntity> tweetMap;
   private List<TweetEntity> tweetsForProject;

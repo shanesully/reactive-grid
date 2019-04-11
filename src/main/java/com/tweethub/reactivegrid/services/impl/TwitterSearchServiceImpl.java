@@ -13,12 +13,12 @@ import twitter4j.QueryResult;
 public class TwitterSearchServiceImpl extends AbstractRestClient
     implements TwitterSearchService {
 
-  private static final String ENGLISH_ONLY = "lang:en";
-  private static final String EXCLUDE_RETWEETS = "exclude:retweets";
-  private static final String EXCLUDE_REPLIES = "exclude:replies";
-  private static final int COUNT = 10;
-  private static final String SEPARATOR = " ";
-  private static final String ENCODED_HASHTAG = "%23";
+  private final String ENGLISH_ONLY = "lang:en";
+  private final String EXCLUDE_RETWEETS = "exclude:retweets";
+  private final String EXCLUDE_REPLIES = "exclude:replies";
+  private int COUNT = 10;
+  private final String SEPARATOR = " ";
+  private final String ENCODED_HASHTAG = "%23";
 
   @Autowired
   private JsonMarshallingServiceImpl jsonMarshallingService;

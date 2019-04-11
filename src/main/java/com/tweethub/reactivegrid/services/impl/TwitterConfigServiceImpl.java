@@ -10,9 +10,9 @@ import twitter4j.conf.ConfigurationBuilder;
 
 @Service("twitterConfigService")
 public class TwitterConfigServiceImpl implements TwitterConfigService {
-  private static ConfigurationBuilder configurationBuilder;
-  private static TwitterFactory twitterFactory;
-  private static Twitter twitter;
+  private ConfigurationBuilder configurationBuilder;
+  private TwitterFactory twitterFactory;
+  private Twitter twitter;
 
   private final Twitter4jConfig twitter4jConfig;
 

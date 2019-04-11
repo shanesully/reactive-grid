@@ -16,17 +16,18 @@ public class GithubSearchServiceImpl extends AbstractRestClient implements
   @Autowired
   private JsonMarshallingServiceImpl jsonMarshallingService;
 
-  private static final String GITHUB_API = "https://api.github.com/search/repositories";
-  private static final String SEARCH_QUERY = "?q=reactive";
-  private static final String PAGE_NUMBER = "&page=";
-  private static final String NO_RESULTS_PER_PAGE = "&per_page=5";
+  private final String GITHUB_API = "https://api.github.com/search/repositories";
+  private final String SEARCH_QUERY = "?q=reactive";
+  private final String PAGE_NUMBER = "&page=";
+  private final String NO_RESULTS_PER_PAGE = "&per_page=5";
+  private final String DEFAULT_PAGE = "1";
 
   private ResponseEntity<String> rawResponse;
   private JsonNode jsonResponse;
   private JsonNode jsonGithubProjects;
 
   public List<GithubProjectEntity> getProjects() throws Exception {
-    return getProjects("1");
+    return getProjects(DEFAULT_PAGE);
   }
 
   public List<GithubProjectEntity> getProjects(String pageNo) throws Exception {

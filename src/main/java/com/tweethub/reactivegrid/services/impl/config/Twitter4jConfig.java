@@ -5,8 +5,7 @@ import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@Getter
-@Setter
+@Getter @Setter
 @ConfigurationProperties(prefix = "oauth")
 public class Twitter4jConfig {
     @Value("${oauth.consumerKey}") private String consumerKey;

@@ -19,7 +19,8 @@ import twitter4j.QueryResult;
 @Service("jsonMarshallingService")
 public class JsonMarshallingServiceImpl implements JsonMarshallingService {
 
-  private static final int OFFSET = 1;
+  private final int OFFSET = 1;
+  private final String ITEMS_KEY = "items";
 
   private ObjectMapper mapper = new ObjectMapper();
 
@@ -28,7 +29,7 @@ public class JsonMarshallingServiceImpl implements JsonMarshallingService {
   }
 
   public JsonNode parseGitHubProjectsFromJson(JsonNode parsedGithubProjects) {
-    return parsedGithubProjects.get("items");
+    return parsedGithubProjects.get(ITEMS_KEY);
   }
 
   public List<TweetEntity> convertTwitterSearchResponseToList(QueryResult twitterSearchResponse) throws IOException {
