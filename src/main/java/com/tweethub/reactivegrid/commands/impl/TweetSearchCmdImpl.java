@@ -11,7 +11,7 @@ import org.springframework.shell.standard.ShellMethod;
 public class TweetSearchCmdImpl extends AbstractShellCmd implements TweetSearchCmd {
 
   @Autowired
-  TwitterSearchServiceImpl twitterSearchService;
+  private TwitterSearchServiceImpl twitterSearchService;
 
   @ShellMethod(value="Search for tweets by project name", key="search_tweets_by_project")
   public String searchTweetsForProject(String projectName) throws Exception {

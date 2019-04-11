@@ -15,13 +15,13 @@ import org.springframework.stereotype.Service;
 public class CompositionServiceImpl implements CompositionService {
 
   @Autowired
-  GithubSearchServiceImpl githubSearchService;
+  private GithubSearchServiceImpl githubSearchService;
 
   @Autowired
-  TwitterSearchServiceImpl twitterSearchService;
+  private TwitterSearchServiceImpl twitterSearchService;
 
   @Autowired
-  JsonMarshallingServiceImpl jsonMarshallingService;
+  private JsonMarshallingServiceImpl jsonMarshallingService;
 
   private static final String DEFAULT_PAGE = "1";
 

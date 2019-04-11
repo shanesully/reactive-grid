@@ -29,13 +29,13 @@ public class E2eIntegrationTests {
 	private Shell shell;
 
 	@Autowired
-	GithubSearchServiceImpl githubSearchService;
+	private GithubSearchServiceImpl githubSearchService;
 
 	@Autowired
-	TwitterSearchServiceImpl twitterSearchService;
+	private TwitterSearchServiceImpl twitterSearchService;
 
 	@Autowired
-  CompositionServiceImpl reactiveGridService;
+  private CompositionServiceImpl reactiveGridService;
 
 	@Test
 	public void contextLoads() {
