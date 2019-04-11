@@ -14,7 +14,7 @@ public class ProjectSearchCmdImpl extends AbstractShellCmd implements ProjectSea
   private static final String DEFAULT_PAGE = "1";
 
   @Autowired
-  CompositionServiceImpl reactiveGridService;
+  private CompositionServiceImpl reactiveGridService;
 
   @ShellMethod(value="Search for Reactive Github projects with Tweets", key="search_reactive_projects")
   public String search(@ShellOption(defaultValue = DEFAULT_PAGE) String page) throws Exception {

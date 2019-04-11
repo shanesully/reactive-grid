@@ -27,7 +27,7 @@ public class GitHubServiceTests {
   private int port;
 
   @Autowired
-  GithubSearchServiceImpl gitHubSearchService;
+  private GithubSearchServiceImpl gitHubSearchService;
 
   @Test
   public void contextLoads() {

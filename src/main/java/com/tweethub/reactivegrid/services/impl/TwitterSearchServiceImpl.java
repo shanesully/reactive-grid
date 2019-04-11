@@ -21,10 +21,10 @@ public class TwitterSearchServiceImpl extends AbstractRestClient
   private static final String ENCODED_HASHTAG = "%23";
 
   @Autowired
-  JsonMarshallingServiceImpl jsonMarshallingService;
+  private JsonMarshallingServiceImpl jsonMarshallingService;
 
   @Autowired
-  TwitterConfigServiceImpl twitterConfigService;
+  private TwitterConfigServiceImpl twitterConfigService;
 
   TwitterSearchServiceImpl() {
   }

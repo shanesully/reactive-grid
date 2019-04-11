@@ -14,7 +14,7 @@ public class GithubSearchServiceImpl extends AbstractRestClient implements
     GithubSearchService {
 
   @Autowired
-  JsonMarshallingServiceImpl jsonMarshallingService;
+  private JsonMarshallingServiceImpl jsonMarshallingService;
 
   private static final String GITHUB_API = "https://api.github.com/search/repositories";
   private static final String SEARCH_QUERY = "?q=reactive";
