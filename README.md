@@ -11,6 +11,7 @@ A simple **Java** command line mashup of the **GitHub** and **Twitter** API's
 This project features:
 * An user-friendly command line environment with auto completion and help utilities
 * Ability to search **GitHub** for *reactive* projects, alongside their associated Tweets from **Twitter**
+* Sample command success responses in **examples/** folder
 
 ### Technologies
 
