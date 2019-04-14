@@ -10,12 +10,12 @@ A simple **Java** command line mashup of the **GitHub** and **Twitter** API's
 
 This project features:
 * An user-friendly command line environment with auto completion and help utilities
-* Ability to search **GitHub** for *reactive* projects, alongside their associated Tweets
+* Ability to search **GitHub** for *reactive* projects, alongside their associated Tweets from **Twitter**
 
 ### Technologies
 
 This project makes use of the following dependencies:
-* **git** SCM following GitFlow branching model
+* **git** SCM following **GitFlow** branching model
 * **Maven** for build and dependency management
 * **Spring MVC** for Dependency Injection
 * **Spring Shell** for user-friendly command line environment
@@ -45,6 +45,7 @@ To clone the project to your local machine, open a shell environment and run the
 ### Checkout the Release Tag
 
 To checkout the initial production recent release tag, run the following command:
+
 **git checkout releases/1.0**
 
 ### Change Directory
@@ -55,7 +56,7 @@ Once the project has been cloned, run the following command:
 
 ### Configure Twitter Developer Credentials
 
-From the project directory, edit the 'src/main/resources/application.properties' file and enter the Twitter developer credentials that you generated for this app.
+From the project directory, edit the *'src/main/resources/application.properties'* file and enter the Twitter developer credentials that you generated for this app.
 
 ### Execute Tests
 
