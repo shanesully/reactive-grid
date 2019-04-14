@@ -1,6 +1,6 @@
 # Tweethub
 
-![Alt text](images/tweethub.png?raw=true "Title")
+![Alt text](images/tweethub.png?raw=true | width=100 "Title"){:height="50%" width="50%"}
 
 ## Description
 
@@ -9,17 +9,17 @@ A simple **Java** command line mashup of the **GitHub** and **Twitter** API's
 ### Features
 
 This project features:
-* An user-friendly command line environment with auto completion and help utilities
+* A user-friendly command line environment with auto completion and help utilities
 * Ability to search **GitHub** for *reactive* projects, alongside their associated Tweets from **Twitter**
-* Sample command success responses in **examples/** folder
+* Sample command success responses in '**examples/**' folder
 
 ### Technologies
 
 This project makes use of the following dependencies:
-* **git** SCM following **GitFlow** branching model
+* **git** SCM following a **GitFlow** branching model
 * **Maven** for build and dependency management
 * **Spring MVC** for Dependency Injection
-* **Spring Shell** for user-friendly command line environment
+* **Spring Shell** for a user-friendly command line environment
 * **Jackson** for JSON parsing
 * **JUnit** for Unit Testing and Integration Testing
 * **Mockito** for mocking
@@ -31,15 +31,15 @@ This project makes use of the following dependencies:
 ### Prerequisites
 
 The only prerequisites for this proejct are that:
-* You have a command line environment available(e.g. *Terminal.app*, *Git Bash*, Linux CLI)
+* You have a command line environment available to you(e.g. *Terminal.app*, *Git Bash*, Linux CLI)
 * You have **git** installed
-* You have a Twitter developer account and have generated the relevant Consumer API Keys and Access Tokens for this app
+* You have a Twitter developer account and have generated the relevant *Consumer API Keys* and *Access Tokens* for this app
 
-Maven will automatically install the required Spring dependencies
+**Maven** will automatically install the required Spring dependencies
 
 ### Clone the Project
 
-To clone the project to your local machine, open a shell environment and run the following command:
+To clone the project to your local machine, open a shell envirothe fffnment and run the following command:
 
 **git clone https://github.com/shanesully/tweethub**
 
@@ -57,11 +57,11 @@ Once the project has been cloned, run the following command:
 
 ### Configure Twitter Developer Credentials
 
-From the project directory, edit the *'src/main/resources/application.properties'* file and enter the Twitter developer credentials that you generated for this app.
+From the project directory, edit the *'src/main/resources/application.properties'* file and enter your Twitter developer credentials that you generated for this app.
 
 #### Example Application Properties File with Twitter Developer Credentials
 
-![Alt text](images/example-application-properties.png?raw=true "Title")
+![Alt text](images/example-application-properties.png?raw=true  "Title"){:height="50%" width="50%"}
 
 ### Execute Tests
 
@@ -93,7 +93,7 @@ Enter the **'help'** command from the Spring Shell prompt at any time to be pres
 
 #### Search GitHub Projects
 
-To get a list of **GitHub** projects with their associated Tweets, run the following command:
+To get a list of **GitHub** projects, along with their associated Tweets, run the following command:
 
 **search_reactive_projects**
 
