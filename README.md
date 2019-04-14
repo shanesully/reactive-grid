@@ -1,5 +1,7 @@
 # Tweethub
 
+![Alt text](images/tweethub.png?raw=true "Title")
+
 ## Description
 
 A simple **Java** command line mashup of the **GitHub** and **Twitter** API's
