@@ -8,7 +8,7 @@ A simple **Java** command line mashup of the **GitHub** and **Twitter** API's
 
 This project features:
 * An user-friendly command line environment with auto completion and help utilities
-* Ability to search **GitHub** for *reactive* projects along with associated Tweets
+* Ability to search **GitHub** for *reactive* projects, alongside their associated Tweets
 
 ### Technologies
 
@@ -39,6 +39,11 @@ Maven will automatically install the required Spring dependencies
 To clone the project to your local machine, open a shell environment and run the following command:
 
 **git clone https://github.com/shanesully/tweethub**
+
+### Checkout the Release Tag
+
+To checkout the initial production recent release tag, run the following command:
+**git checkout releases/1.0**
 
 ### Change Directory
 
