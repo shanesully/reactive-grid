@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.tweet-hub</groupId>
-	<artifactId>reactive-grid</artifactId>
+	<artifactId>tweethub</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>reactive-grid</name>
+	<name>tweethub</name>
 	<description>Simple command line app for searching GitHub projects on Twitter</description>
 
 	<properties>
