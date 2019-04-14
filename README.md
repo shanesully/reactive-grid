@@ -58,6 +58,10 @@ Once the project has been cloned, run the following command:
 
 From the project directory, edit the *'src/main/resources/application.properties'* file and enter the Twitter developer credentials that you generated for this app.
 
+#### Example Application Properties File with Twitter Developer Credentials
+
+![Alt text](images/example-application-properties.png?raw=true "Title")
+
 ### Execute Tests
 
 Once you've configured the Twitter developer credentials, execute the tests in isolation by running the following command:
@@ -100,7 +104,7 @@ To view a different five projects, run the same command with the addition of a *
 
 This will return the next five projects from **GitHub**
 
-####Search Tweets for Arbitrary Project####
+#### Search Tweets for Arbitrary Project
 
 To get a list of up to ten **Tweets** for any given GitHub project, run the following command, specifying the name of that project:
 
