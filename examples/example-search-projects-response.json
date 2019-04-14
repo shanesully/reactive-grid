@@ -1,0 +1,90 @@
+{
+  "githubProjects" : {
+    "1" : {
+      "id" : 3606624,
+      "name" : "ReactiveCocoa",
+      "description" : "Reactive extensions to Cocoa frameworks, built on top of ReactiveSwift",
+      "htmlUrl" : "https://github.com/ReactiveCocoa/ReactiveCocoa"
+    },
+    "2" : {
+      "id" : 12576526,
+      "name" : "reactive",
+      "description" : "The Reactive Extensions for .NET",
+      "htmlUrl" : "https://github.com/dotnet/reactive",
+      "tweets" : {
+        "1" : {
+          "id" : -1525235712,
+          "text" : "New entry in my #reactive project. Today I play with #Quarkus, a framework from Red hat for #Serverless computing.\n\nhttps://t.co/rrP5liyo5A"
+        },
+        "2" : {
+          "id" : 198619136,
+          "text" : "We provide comprehensive maintenance support services, both agreed #plannedmaintenance programs & an #emergency #callout facility.\nClients can be confident in talking to our experienced #Helpdesk. Covering a diverse range from emergency #reactive #maintenance to #PPM https://t.co/GG1Rf4gD7a"
+        },
+        "3" : {
+          "id" : 1205260288,
+          "text" : "Time to enjoy another weekend following a busy week that has flown past! As always there’s a chance you will have an out of hours problem 😣 No need to worry! 🙂We’re available to help you 24 hours a day, 365 days a year! #callout #fms #problems #reactive #maintenance #repairs https://t.co/pOw9GRBtUp"
+        },
+        "4" : {
+          "id" : -526995456,
+          "text" : "Looking for business differentiation? Then join us at our Paris @IDDDWorkshop with a special #Reactive training day with @VaughnVernon! Check out the agenda  for this hands on programming workshop, you're going to not want to miss this! \nhttps://t.co/0shWahZCb6"
+        },
+        "5" : {
+          "id" : -803864575,
+          "text" : "Reading Reactive Programming in Java makes me feel like working with Kuberbetes for the first time. Am I not entertained!? 🤪 #learning #java #reactive"
+        },
+        "6" : {
+          "id" : 680792064,
+          "text" : "#Reactive contextually-based knowledge user"
+        },
+        "7" : {
+          "id" : 886439942,
+          "text" : "We're officially less than 50 days away from Reactive Horizons 2019 in Orlando FL!! ☀️🌴 Check out our line up of #fastdata experts at https://t.co/ZPQgD3KQWq. \n--\nHosted by @YoppWorks and powered by @lightbend \n#reactive #scala #akka #lightbend https://t.co/ZMYMlFCS8t"
+        },
+        "8" : {
+          "id" : 1788268545,
+          "text" : "Goal for this year : speak on a summit on the great things we do with #reactive applications. If you know something relevant : let me know."
+        },
+        "9" : {
+          "id" : -338243584,
+          "text" : ".@Angular #Reactive Forms: Tips and Tricks https://t.co/PDUlrSDeIH https://t.co/G6VGLQg3Zp"
+        },
+        "10" : {
+          "id" : 2044112905,
+          "text" : "Searching for a value in business-driven technology knowledge acquisition? Look no further than our @IDDDWorkshop with an additional  #DDD and #Reactive training day with @VaughnVernon!\nhttps://t.co/PPeiuBUsE2"
+        }
+      }
+    },
+    "3" : {
+      "id" : 715082,
+      "name" : "ReactiveUI",
+      "description" : "An advanced, composable, functional reactive model-view-viewmodel framework for all .NET platforms that is inspired by functional reactive programming. ReactiveUI allows you to  abstract mutable state away from your user interfaces, express the idea around a feature in one readable place and improve the testability of your application.",
+      "htmlUrl" : "https://github.com/reactiveui/ReactiveUI"
+    },
+    "4" : {
+      "id" : 33569135,
+      "name" : "RxSwift",
+      "description" : "Reactive Programming in Swift",
+      "htmlUrl" : "https://github.com/ReactiveX/RxSwift",
+      "tweets" : {
+        "1" : {
+          "id" : 525852678,
+          "text" : "🥳 Sweet! My course \"Mastering RxSwift in iOS\" is featured on Udemy :) Enroll now and start building reactive apps using RxSwift.  https://t.co/fwJ1gAwXPX #rxswift #iosdev https://t.co/bMdfCLgq8r"
+        },
+        "2" : {
+          "id" : -11243520,
+          "text" : "How do connectable operators work in #RxSwift? Our @ajeferson11 answers in our latest #mobile #development blog post: https://t.co/msNFHq4Zus"
+        },
+        "3" : {
+          "id" : -241950715,
+          "text" : "I've fixed the RxGesture Library for #iOS and #MacOS to provide support with @RxSwiftLang 4.5.0 , you can download it from here #RXSwift #RXProgramming https://t.co/CQwSe7PElc"
+        }
+      }
+    },
+    "5" : {
+      "id" : 59369770,
+      "name" : "ReactiveSwift",
+      "description" : "Streams of values over time",
+      "htmlUrl" : "https://github.com/ReactiveCocoa/ReactiveSwift"
+    }
+  }
+}
