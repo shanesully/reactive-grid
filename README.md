@@ -43,17 +43,17 @@ To clone the project to your local machine, open a shell environment and run the
 
 **git clone https://github.com/shanesully/tweethub**
 
-### Checkout the Release Tag
-
-To checkout the initial production recent release tag, run the following command:
-
-**git checkout releases/1.0**
-
 ### Change Directory
 
 Once the project has been cloned, run the following command:
 
 **cd tweethub**
+
+### Checkout the Release Tag
+
+To checkout the initial production recent release tag, run the following command:
+
+**git checkout releases/1.0**
 
 ### Configure Twitter Developer Credentials
 
