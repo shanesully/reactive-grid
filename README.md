@@ -1,6 +1,6 @@
 # Tweethub
 
-![Alt text](images/tweethub.png?raw=true "Title")
+<img src="images/tweethub.png" style="width: 50%; height: 50%" title="TweetHub Logo"/>
 
 ## Description
 
@@ -61,7 +61,7 @@ From the project directory, edit the *'src/main/resources/application.properties
 
 #### Example Application Properties File with Twitter Developer Credentials
 
-![Alt text](images/example-application-properties.png?raw=true "Title")
+<img src="images/example-application-properties.png" style="width: 50%; height: 50%" title="Application Properties Example"/>
 
 ### Execute Tests
 
